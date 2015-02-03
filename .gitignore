@@ -4,3 +4,18 @@
 node_modules/
 platforms/
 plugins/
+
+#some good defaults
+*.log
+.DS_Store
+*.swp
+
+#ignore files placed by npm build
+.bin
+
+#ignore local config files
+.idea/
+.directory
+
+#ignore compiled assets
+www/css
