@@ -1,0 +1,19 @@
+.bp-tabs {
+
+  display: flex;
+
+  &__item {
+    text-align: center;
+    vertical-align: middle;
+    line-height: 45px;
+    width: 100px;
+    font-weight: bold;
+    color: gray;
+  }
+
+  &__item--selected {
+    border-bottom: 3px solid rgb(91,163,231);
+    color: rgb(91,163,231);
+  }
+
+}

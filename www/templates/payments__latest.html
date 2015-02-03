@@ -1,68 +1,22 @@
 <div>
   <ion-list>
     <ion-item class="payments-view__payment">
-      <div class="payments-view__payment__order-title">PS3</div>
-      <div class="payments-view__payment__order-amount">$599</div>
-      <div class="payments-view__payment__order-date">11:00 AM, May 5</div>
-      <div class="payments-view__payment__order-status payments-view__payment__order-status--paid">
+      <div class="bp-payments__payment__order-title">PS3</div>
+      <div class="bp-payments__payment__order-amount">$599</div>
+      <div class="bp-payments__payment__order-date">11:00 AM, May 5</div>
+      <div class="bp-payments__payment__order-status bp-payments__payment__order-status--paid">
         <i class="icon ion-checkmark-circled" ng-show="!payment.exception"></i>
         <span>PAID</span>
       </div>
     </ion-item>
     <ion-item class="payments-view__payment">
-      <div class="payments-view__payment__order-title">PS3</div>
-      <div class="payments-view__payment__order-amount">$599</div>
-      <div class="payments-view__payment__order-date">11:00 AM, May 5</div>
-      <div class="payments-view__payment__order-status payments-view__payment__order-status--overpaid">
+      <div class="bp-payments__payment__order-title">PS3</div>
+      <div class="bp-payments__payment__order-amount">$599</div>
+      <div class="bp-payments__payment__order-date">11:00 AM, May 5</div>
+      <div class="bp-payments__payment__order-status bp-payments__payment__order-status--overpaid">
         <i class="icon ion-checkmark-circled" ng-show="!payment.exception"></i>
         <span>OVERPAID BY $2.55</span>
       </div>
     </ion-item>
   </ion-list>
-
-
-
-  <style>
-    .payments-view__payment {
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-    }
-    .payments-view__payment > * {
-      flex: 50%;
-      padding: 7px;
-    }
-
-    .payments-view__payment__order-title {
-      font-weight: bold;
-      font-size: 0.9em;
-    }
-
-    .payments-view__payment__order-amount {
-      text-align: right;
-      font-weight: bold;
-      font-size: 1.4em;
-    }
-
-    .payments-view__payment__order-date {
-      font-size: 0.9em;
-      color: gray;
-    }
-
-    .payments-view__payment__order-status {
-      text-align: right;
-      color: orange;
-    }
-
-    .payments-view__payment__order-status--paid {
-      text-align: right;
-      color: green;
-    }
-
-    .payments-view__payment__order-status--overpaid {
-      text-align: right;
-      color: orange;
-    }
-
-  </style>
 </div>
