@@ -1,0 +1,14 @@
+
+ion-side-menus {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+ion-side-menu-content.menu-content {
+  width: calc(100% - 275px);
+  left: 275px;
+}
+
+.ion-navicon {
+  display: none;
+}
