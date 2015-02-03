@@ -1,6 +1,6 @@
 {
   "name": "covalent-test",
-  "app_id": "",
+  "app_id": "88ffd4c3",
   "gulpStartupTasks": [
     "sass",
     "watch"
