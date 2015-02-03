@@ -1,0 +1,39 @@
+<ion-view view-title="Payments">
+
+  <ion-content>
+
+    <div class="bp-tabs">
+      <a class="bp-tab-item" ui-sref="app.payments.latest" ui-sref-active="selected" lcl>Latest</a>
+      <a class="bp-tab-item" ui-sref="app.payments.paid" ui-sref-active="selected" lcl>Paid</a>
+    </div>
+
+    <ui-view name="paymentsViewport"></ui-view>
+
+  </ion-content>
+
+  <style>
+    .bp-tabs {
+      display: flex;
+    }
+
+    .bp-tab-item {
+      text-align: center;
+      vertical-align: middle;
+      line-height: 45px;
+      width: 100px;
+      font-weight: bold;
+      color: gray;
+    }
+
+    .bp-tab-item.selected {
+      border-bottom: 3px solid rgb(91,163,231);
+      color: rgb(91,163,231);
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+  </style>
+
+</ion-view>

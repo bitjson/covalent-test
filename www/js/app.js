@@ -56,6 +56,34 @@ angular.module('starter', ['ionic', 'starter.controllers'])
         }
       }
     })
+    .state('app.payments', {
+      url: "/payments",
+      abstract: true,
+      views: {
+        'menuContent': {
+          templateUrl: "templates/payments.html",
+          controller: 'PaymentsCtrl'
+        }
+      }
+    })
+
+    .state('app.payments.latest', {
+      url: "/latest",
+      views: {
+        'paymentsViewport': {
+          templateUrl: "templates/payments__latest.html"
+        }
+      }
+    })
+
+    .state('app.payments.paid', {
+      url: "/paid",
+      views: {
+        'paymentsViewport': {
+          templateUrl: "templates/payments__paid.html"
+        }
+      }
+    })
 
   .state('app.single', {
     url: "/playlists/:playlistId",

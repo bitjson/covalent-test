@@ -33,16 +33,36 @@ angular.module('starter.controllers', [])
   };
 })
 
-.controller('PlaylistsCtrl', function($scope) {
-  $scope.playlists = [
-    { title: 'Reggae', id: 1 },
-    { title: 'Chill', id: 2 },
-    { title: 'Dubstep', id: 3 },
-    { title: 'Indie', id: 4 },
-    { title: 'Rap', id: 5 },
-    { title: 'Cowbell', id: 6 }
-  ];
-})
+  .controller('PlaylistsCtrl', function($scope) {
+    $scope.playlists = [
+      { title: 'Reggae', id: 1 },
+      { title: 'Chill', id: 2 },
+      { title: 'Dubstep', id: 3 },
+      { title: 'Indie', id: 4 },
+      { title: 'Rap', id: 5 },
+      { title: 'Cowbell', id: 6 }
+    ];
+  })
+
+  .controller('PaymentsCtrl', function($scope) {
+    $scope.paid = [
+      { title: 'pReggae', id: 1 },
+      { title: 'pChill', id: 2 },
+      { title: 'pDubstep', id: 3 },
+      { title: 'pIndie', id: 4 },
+      { title: 'pRap', id: 5 },
+      { title: 'pCowbell', id: 6 }
+    ];
+
+    $scope.latest = [
+      { title: 'lReggae', id: 1 },
+      { title: 'lChill', id: 2 },
+      { title: 'lDubstep', id: 3 },
+      { title: 'lIndie', id: 4 },
+      { title: 'lRap', id: 5 },
+      { title: 'lCowbell', id: 6 }
+    ];
+  })
 
 .controller('PlaylistCtrl', function($scope, $stateParams) {
 });
