@@ -1,4 +1,9 @@
+//constrain view for desktop
 ion-side-menus {
-  //max-width: 1440px;
+  max-width: 1440px;
   margin: 0 auto;
+}
+
+ion-side-menu-content {
+  max-width: 1165px;
 }
